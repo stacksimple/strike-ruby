@@ -1,0 +1,369 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dev.strike.acinq.co/api/v1/charges
+    body:
+      encoding: UTF-8
+      string: '{"amount":42000,"currency":"btc","description":"1%20Blockaccino","customer_id":"This
+        is a random test field"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic c2tfb1kzWkJ0N0E2c1F6cmdQMjFDTHdyRmQ4em1wbTQ6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, X-XSRF-TOKEN
+      - x-requested-with
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-store, max-age=0
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 14 Nov 2018 03:42:42 GMT
+      Server:
+      - nginx/1.12.1
+      Content-Length:
+      - '627'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id" : "ch_P25H4AwF5MxW122KtnQtSwWKM58dp",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "066314dd3ab717b48adf22621946a8c8af5f7a278bfddd0a5d4a08441c45efd8",
+          "payment_request" : "lntb420u1pd7hxdjpp5qe33fhf6kutmfzklyf3pj34gezh47738307a6zjafgyyg8z9alvqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2pte2ykgatp9y9fse0nqq7f22tjdhdrehnwjh8cf2kghjjuxcv6jxqjy9rgvac3xnau2kqq08sxqhar5q6jgnydl5j9w2393lezcflxcq0ulwd3",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542166962677,
+          "updated" : 1542166962677
+        }
+    http_version: 
+  recorded_at: Wed, 14 Nov 2018 03:42:42 GMT
+- request:
+    method: get
+    uri: https://api.dev.strike.acinq.co/api/v1/charges
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - Basic c2tfb1kzWkJ0N0E2c1F6cmdQMjFDTHdyRmQ4em1wbTQ6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, X-XSRF-TOKEN
+      - x-requested-with
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-store, max-age=0
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 14 Nov 2018 03:42:43 GMT
+      Server:
+      - nginx/1.12.1
+      Content-Length:
+      - '12582'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        [ {
+          "id" : "ch_P25H4AwF5MxW122KtnQtSwWKM58dp",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "066314dd3ab717b48adf22621946a8c8af5f7a278bfddd0a5d4a08441c45efd8",
+          "payment_request" : "lntb420u1pd7hxdjpp5qe33fhf6kutmfzklyf3pj34gezh47738307a6zjafgyyg8z9alvqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2pte2ykgatp9y9fse0nqq7f22tjdhdrehnwjh8cf2kghjjuxcv6jxqjy9rgvac3xnau2kqq08sxqhar5q6jgnydl5j9w2393lezcflxcq0ulwd3",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542166962677,
+          "updated" : 1542166962677
+        }, {
+          "id" : "ch_MBds3gUEkmNj6drfKEZBZiNH6GmHw",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "c5fb6e76ecedf64b339c08262ad5a61b40805128f7a1e636159b2eaa01dd735c",
+          "payment_request" : "lntb420u1pd7hxddpp5chakuahvahmykvuupqnz44dxrdqgq5fg77s7vds4nvh25qwawdwqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2vt78d5zd4dvlhg8fhjk6cr8s0q3fx7de2nquyt2p0elfcyj4d2hpqs0pdkwan6kz3rlfc6uazt00yn2y203fdfhwkcr9g0pfxd30ylspuctywq",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542166957572,
+          "updated" : 1542166957572
+        }, {
+          "id" : "ch_3iy8kiDkHFPZGcoPZZUVTSgoCF39N",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "99e3b6f4896988dd4bcbf7cb25b48ba5010bc3e5df3494e915d9aaafaf0b598b",
+          "payment_request" : "lntb420u1pd7k2rapp5n83mdayfdxyd6j7t7l9jtdyt55qshsl9mu6ff6g4mx42ltcttx9sdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2qmk4lkdxjgc7dw40pplsn8l62q5cve7r4yvwtxfk93mqmahewayhv9djhacntrjtga2mcpjvze5meavkcktp0zy0lxws48vehnytj0qqtyqpsy",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542137981700,
+          "updated" : 1542137981700
+        }, {
+          "id" : "ch_QGi873cd1ipehxSNVzKsEjmLLeU46",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "9afc0b545e127a8cb01fd1b5b46d027552506fc2e2a6507119f7e54a385cb36a",
+          "payment_request" : "lntb420u1pd7kfvppp5nt7qk4z7zfagevql6x6mgmgzw4f9qm7zu2n9quge7lj55wzukd4qdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp28lf8a6uzmghp48rm5hspc4agpe9wnthkx03aedddtnakpyu3qjkrgm4665pzr4upufwf0sgc895dtq4dywhl240pdcvyu8l9d2guw6gpah6mjn",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542137217908,
+          "updated" : 1542137217908
+        }, {
+          "id" : "ch_KPd6XJw2Uq6VcZoGA6kqmRsGVbfcj",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "b1b0b6f31d6aeb6adddf663d503ee83998cbe3b3b38be1561d5fb852fec507bf",
+          "payment_request" : "lntb420u1pd7kpdtpp5kxctducadt4k4hwlvc74q0hg8xvvhcankw97z4sat7u99lk9q7lsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp22p3cvzxkn45f74kka8dfj6ghur3pmjy0k326g2ds0vyanfn6e4k4qets2ghzdfz6cumpxd4r0h5qzk7cjyrgnys9rtuy3u6d4k6zvvcpfezr3q",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542129067662,
+          "updated" : 1542129067662
+        }, {
+          "id" : "ch_152qNdrhKMChxpviTT4mEQCqECwyh",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "d5152c66c153a3f873abc5e9f67395eb07b36578ecfbffaa5203efeec92fe645",
+          "payment_request" : "lntb420u1pd7kpd2pp5652jcekp2w3lsuatch5lvuu4avrmxetcanall2jjq0h7ajf0uezsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2sv4uv824t3skru507hud0avrmugkwrrx4knhxt8wzhjtzkte6typf4uhmw7j6ftprgr9xyt4aahmxrdzsf47m33w8340m50pj7w0x2sq4gpmrf",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542129066660,
+          "updated" : 1542129066660
+        }, {
+          "id" : "ch_DBYshXdJA9bKaySZHunbFf2Bb749Q",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "a2bf0cc94808bf36f1a7c43addff6734681c02249145178ad7ed0541206e09b6",
+          "payment_request" : "lntb420u1pd7kpf4pp552lsej2gpzlndud8csadmlm8x35pcq3yj9z30zkha5z5zgrwpxmqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2vc99dlq8j5rh3guh8xj86q0kv5nekrg0zsjpacyxlwy3p45z0mmhtr7vsus066qyc6q2443sc2h7vc78drcxx6uf3pjc0fqly3unplqqra846s",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542128949387,
+          "updated" : 1542128949387
+        }, {
+          "id" : "ch_3XCPVopFeY13J7cTzmyxG23KcpAhb",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "bc4a060b82e162b35e01a0ece1eb25834c6d8b2177d2d4ed9f2e050f47751f35",
+          "payment_request" : "lntb420u1pd7kpf5pp5h39qvzuzu93txhsp5rkwr6e9sdxxmzepwlfdfmvl9czs73m4ru6sdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2te28n9rxlafh6kdf52nky8gmpusk2c65kp8ws29ueptpwua25qnrlnf020p6nyxehxy0n2ly9dt996u9m9gvtc9zs503p0wc2ag8nfcpucu7gd",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542128948888,
+          "updated" : 1542128948888
+        }, {
+          "id" : "ch_DzHckL6UyqedFT5ppCvLScv8Ev722",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "9efadc5e94a1f29ed9985b84db50140ba9cef57c7e2c2f041c803754e09af591",
+          "payment_request" : "lntb420u1pd7kpfzpp5nmadch5558efakvctwzdk5q5pw5uaatu0ckz7pqusqm4fcy67kgsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2tgvge8gr6l24vrlwssfm446a7n3zcpt9rz8agrylrzlfj6qpsq2j6wr9yfhrut3n7na68dxf56j8e00hkkfwznjwv099qw4chuxmtjcpvzc60r",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542128930158,
+          "updated" : 1542128930158
+        }, {
+          "id" : "ch_Nt5B2jK18Zu3sZchs33pTn61xjD8z",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "bcc451a0d5ce9674eae99a76820264c86cffb60e68106457c21aa193eea9c320",
+          "payment_request" : "lntb420u1pd746w0pp5hnz9rgx4e6t8f6hfnfmgyqnyepk0ldswdqgxg47zr2se8m4fcvsqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2z5f7u4g9n2kvtupx5pjfujj0nek0yk9jzrrf03xefswqm0ryprvzy6drshfk8a9wuj5jye9gya9czhddszjjamycgj7utxqr7j449hsqh3n2jd",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542121935741,
+          "updated" : 1542121935741
+        }, {
+          "id" : "ch_7AQJcB5rLJtd5VsYh6SQJZSYGQQY7",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "b138c1ac2df5f349f401d69bd8f47e5cbc43baef939990302b95ba13b23a7535",
+          "payment_request" : "lntb420u1pd746wdpp5kyuvrtpd7he5naqp66da3ar7tj7y8wh0jwveqvptjkap8v36w56sdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2c30z0r425tkzls29psc324y5nsntadkcw8eq3lz8m6wcawvhhh7pc43cgrsuacmpdu3fmem96q87sede4geem7pguna3rdck2qvj4ngp3k4525",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542121933767,
+          "updated" : 1542121933767
+        }, {
+          "id" : "ch_GQDhNg9U59eRP1VtaHpMCBFPex5vS",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "a0ddb6069120f92ea915b2306a7c3ad844efa826610c64b37a3eaff7ab25f900",
+          "payment_request" : "lntb420u1pd74e7vpp55rwmvp53yruja2g4kgcx5lp6mpzwl2pxvyxxfvm686hl02e9lyqqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp208jend4k9d4ygf7w2p36xxhz52xrp0yrhxj32jz2qhdprxhzrw75fxnw4slr0jus4zay4neg6m5lvt5h76lgufvuxu0uq3eqhv7qehqpzr0pw9",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542121420763,
+          "updated" : 1542121420763
+        }, {
+          "id" : "ch_3iSP8AXHe4HafERRLohfzU8WH5wm5",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "bd0d63dad04b1ffcde8ff886ea631bc0a10b7833ebbb411ccaf2e74834ca316b",
+          "payment_request" : "lntb420u1pd74e7tpp5h5xk8kksfv0leh50lzrw5ccmczssk7pnawa5z8x27tn5sdx2x94sdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2h0a0yjl6ehxlq83uu8lxaanf242vsgqnl2wargfqf9qyvnm5ct939ltg4e6ndtarmcwqu6z5geuuctl66zxthul3n0d0aetzy4vkvmsq2hrrms",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542121419768,
+          "updated" : 1542121419768
+        }, {
+          "id" : "ch_NGuEcJyDN9TVYm5fbUHF6jAVHryn6",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "aaffc87e2e9e81a72e4bb1cec9293baefdafaece3be265fcaa739f302e0418bd",
+          "payment_request" : "lntb420u1pd74e66pp54tlusl3wn6q6wtjtk88vj2fm4m76ltkw803xtl92ww0nqtsyrz7sdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2fay946m2damuzj08g9stg9s9luxl9ygyt4njgdwtqv3h54nzntj3s4av6jqmu57qfg7zpxkgucxd6rv6aztyz2m2jfdtvmyh5x52t0qqd3723r",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542121306295,
+          "updated" : 1542121306295
+        }, {
+          "id" : "ch_MMZ7wdoEtAU49izC2njvdQyF5359o",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "18a3f4a4ff2ced4d7b061bbe00678265d52474500b111dd4e012746a2988c9b1",
+          "payment_request" : "lntb420u1pd74e6epp5rz3lff8l9nk567cxrwlqqeuzvh2jgazspvg3m48qzf6x52vgexcsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2sxhjwup85kg0ul8xzefdlzavqj64px3deu5ghar0rm3vc8utmauydm4tt8wk2fhjqdp5s3klkcpjakxpjazdc26smjy7uf6fcjl4a9cqa4nt75",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542121305310,
+          "updated" : 1542121305310
+        }, {
+          "id" : "ch_9cjHkJ5KK6HVszBcHy2EeCq8yDRUK",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "1d71dd9a98f1a87688f4fc89c42119f5247a11dd9a538c23674fca3e348a150b",
+          "payment_request" : "lntb420u1pd74eh9pp5r4camx5c7x58dz85ljyuggge75j85ywanffccgm8fl9rudy2z59sdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2s90x05vp2nhqq8mjh385gjsg732x6h2qal3gylcjaq95z7kn50s8sxhy5z9l077thvrdg44dmzyn5y86wq8x8shagygspzll60524sspgmq7v4",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542121189733,
+          "updated" : 1542121189733
+        }, {
+          "id" : "ch_8fZTqGg4ebwaJv3np6ajuoUCySwPs",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "18ccc3e547b61fea29ac9571681c1e1d7c635188a365ae01541a442c7d24fda8",
+          "payment_request" : "lntb420u1pd74ehypp5rrxv8e28kc0752dvj4cks8q7r47xx5vg5dj6uq25rfzzclfylk5qdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2864cxqj4hxl2ctf4fjtxcgypye6ndx4j7ceq25enwxqjlhdk582n6lufug7l94ktf6jpppgqyyx27ckjesuwpyy9wzxnamwgmdfn57cpdesc6x",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542121188716,
+          "updated" : 1542121188716
+        }, {
+          "id" : "ch_MKC939k7xs5kVkJfFAsduURpbnPA7",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "4509e321033b9b7257d5828f229337534b8bf58750d55e4575827fb2feae1f26",
+          "payment_request" : "lntb420u1pd75avwpp5g5y7xggr8wdhy474s28j9yeh2d9chav82r24u3t4sflm9l4wrunqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2nvkjhhspwgyhgmv2qpc55dfhwnd3z5nyfmjmu2qwhhyzsvzw7ltntep5yps0u570dzwje8rgdg5e8387nelsmljn0c6j9ph0f029qjgqm8lccn",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542092174327,
+          "updated" : 1542092174327
+        }, {
+          "id" : "ch_EvHdWBD7aNhGsPFnAbZrcv5XQJdg2",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "568d6e11cdcfe77963e37cbf90257e4d86fa932c27974c2f7edc84dc04857ba3",
+          "payment_request" : "lntb420u1pd75avvpp526xkuywdelnhjclr0jleqft7fkr04yevy7t5ctm7mjzdcpy90w3sdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2t7f2fpf36qqsdzuuw5ku0p76cjq3s6u4afq2c55vp288tdq6757kkuajcmazfehmyhe00n6vs6spu9hufh0l3h8s0zyey2uhumzyf5cptqgz69",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542092172756,
+          "updated" : 1542092172756
+        }, {
+          "id" : "ch_1jSmVtGiDptw8NQKB6GXTVYA1YJZZ",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "9ad8bf283156867ddc86caf3c9438f09747172224ed3a1059c674f3b0ebef03a",
+          "payment_request" : "lntb420u1pd75atvpp5ntvt72p326r8mhyxeteujsu0p968zu3zfmf6zpvuva8nkr477qaqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2qn9cl9hzjjzck6czwrskd0etnq5cjhsjndvlckzvp0hkt02vlhzjxr3raak4jcdkude3v4g8zr4g2ukzkqfjz7n4zvgsqz6qyk7rqxcpa2la7x",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542092140170,
+          "updated" : 1542092140170
+        } ]
+    http_version: 
+  recorded_at: Wed, 14 Nov 2018 03:42:44 GMT
+recorded_with: VCR 3.0.3

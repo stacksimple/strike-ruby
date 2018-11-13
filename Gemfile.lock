@@ -1,0 +1,42 @@
+PATH
+  remote: .
+  specs:
+    strike-ruby (0.1.0)
+      faraday
+      json
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    faraday (0.15.3)
+      multipart-post (>= 1.2, < 3)
+    hashdiff (0.3.5)
+    json (2.1.0)
+    minitest (5.11.3)
+    multipart-post (2.0.0)
+    public_suffix (3.0.3)
+    rake (10.5.0)
+    safe_yaml (1.0.4)
+    vcr (3.0.3)
+    webmock (2.3.2)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  minitest (~> 5.0)
+  rake (~> 10.0)
+  strike-ruby!
+  vcr
+  webmock
+
+BUNDLED WITH
+   1.16.1
