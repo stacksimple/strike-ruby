@@ -35,7 +35,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 14 Nov 2018 03:42:42 GMT
+      - Wed, 14 Nov 2018 18:56:42 GMT
       Server:
       - nginx/1.12.1
       Content-Length:
@@ -46,24 +46,24 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "id" : "ch_P25H4AwF5MxW122KtnQtSwWKM58dp",
+          "id" : "ch_2muHryWNAK1hV6M5cA93NxXnZL59b",
           "object" : "charge",
           "amount" : 42000,
           "currency" : "btc",
           "amount_satoshi" : 42000,
-          "payment_hash" : "066314dd3ab717b48adf22621946a8c8af5f7a278bfddd0a5d4a08441c45efd8",
-          "payment_request" : "lntb420u1pd7hxdjpp5qe33fhf6kutmfzklyf3pj34gezh47738307a6zjafgyyg8z9alvqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2pte2ykgatp9y9fse0nqq7f22tjdhdrehnwjh8cf2kghjjuxcv6jxqjy9rgvac3xnau2kqq08sxqhar5q6jgnydl5j9w2393lezcflxcq0ulwd3",
+          "payment_hash" : "194e330d1b106c43afdd00ab3eb04a9012152298cb04774557805ffcae978928",
+          "payment_request" : "lntb420u1pd7cml2pp5r98rxrgmzpky8t7aqz4navz2jqfp2g5cevz8w32hsp0let5h3y5qdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp20w5s996rfsrlne563a6llzy7mpmhn6r620usxqx8tnp9d6g5e7qpam76ktxm523s063kv0wwyq7efys7yf797k8lch4hnpjh8njm5ugq94qgfk",
           "description" : "1%20Blockaccino",
           "customer_id" : "This is a random test field",
           "paid" : false,
-          "created" : 1542166962677,
-          "updated" : 1542166962677
+          "created" : 1542221802108,
+          "updated" : 1542221802108
         }
     http_version: 
-  recorded_at: Wed, 14 Nov 2018 03:42:42 GMT
+  recorded_at: Wed, 14 Nov 2018 18:56:42 GMT
 - request:
     method: get
-    uri: https://api.dev.strike.acinq.co/api/v1/charges
+    uri: https://api.dev.strike.acinq.co/api/v1/charges?page=0&size=30
     body:
       encoding: US-ASCII
       string: ''
@@ -93,17 +93,121 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 14 Nov 2018 03:42:43 GMT
+      - Wed, 14 Nov 2018 18:56:42 GMT
       Server:
       - nginx/1.12.1
       Content-Length:
-      - '12582'
+      - '19164'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: |-
         [ {
+          "id" : "ch_2muHryWNAK1hV6M5cA93NxXnZL59b",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "194e330d1b106c43afdd00ab3eb04a9012152298cb04774557805ffcae978928",
+          "payment_request" : "lntb420u1pd7cml2pp5r98rxrgmzpky8t7aqz4navz2jqfp2g5cevz8w32hsp0let5h3y5qdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp20w5s996rfsrlne563a6llzy7mpmhn6r620usxqx8tnp9d6g5e7qpam76ktxm523s063kv0wwyq7efys7yf797k8lch4hnpjh8njm5ugq94qgfk",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542221802108,
+          "updated" : 1542221802108
+        }, {
+          "id" : "ch_G42xQYhXrSwD4JRJAjY4mhYLtaNxQ",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "867d81b8246adee9888724b3c9d181273afff4d24d4cd31f8d71e480fa6f9e13",
+          "payment_request" : "lntb420u1pd7cmappp5se7crwpydt0wnzy8yjeun5vpyua0laxjf4xdx8udw8jgp7n0ncfsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2xrwfep9m65p70z0fvaktgsucd0zwguxzvcc3w62579n8jhlp0zmzvupk863qx0msgseggs6am20t3mf5tgupljvwqerjuzqkrhfsm3gpjrv5na",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542221729511,
+          "updated" : 1542221729511
+        }, {
+          "id" : "ch_PBQ5PSk995rVQERbZPr25QB6uNJ9C",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "c46252b2104bb49adc99d18f319820240692f64ae68e8d6c4e2fc2fe66d1a80f",
+          "payment_request" : "lntb420u1pd7cmaqpp5c3399vssfw6f4hye6x8nrxpqysrf9aj2u68g6mzw9lp0uek34q8sdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2r8pzpq7kvk5dn628s5hd83kqcwsclkp0jpzuxjtlka5x46kzvqr3j5djvuu828wcvwkjaxkqxsh209mpfdwga99rcrv2082smjyf06gp9v5ht8",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542221728113,
+          "updated" : 1542221728113
+        }, {
+          "id" : "ch_9zeqF8zQUmiX4VvvboSbzuiF4nT3u",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "9a00275a62535370dd0d536cb3806331544465b2116e788cc8be27553e76caff",
+          "payment_request" : "lntb420u1pd7cmulpp5ngqzwknz2dfhphgd2dkt8qrrx92ygedjz9h83rxghcn420nketlsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2rg438whthtvea49zmmqaxr09hsym3qlefdl423gzaraaf33026zy9yj50uzln5wrq73zw8lhmgtlucnqt85r0cylxg8l8uzejpkk4jcpp4a9qn",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542221727479,
+          "updated" : 1542221727479
+        }, {
+          "id" : "ch_4NRRWtToPsxQ3XR4JYebAMByW2Pmy",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "34518b07c7b171ad5da4368c774bde6c128661674b334ea71afc9a86c4b87397",
+          "payment_request" : "lntb420u1pd7cm57pp5x3gckp78k9c66hdyx6x8wj77dsfgvct8fve5afc6ljdgd39cwwtsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2z2x8c256ah5zvspsn0rucsv2dazxw0tu06jrtecr483nkmd3zd7j7z5qh5fl0wh0vtj43t4quudsp3dgrc8r8k903kng6z9nfmc8accpyrf3xv",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542221470244,
+          "updated" : 1542221470244
+        }, {
+          "id" : "ch_NinYjYifRF8g28zB2fbZURstLvXq9",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "68668d4f32cd4c0e452c19c8d10c900fe82b9c54540126b7d19ca8b4a1a7a547",
+          "payment_request" : "lntb420u1pd7cm5app5dpng6neje4xqu3fvr8ydzryspl5zh8z52sqjdd73nj5tfgd854rsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2qsst7qs8whkak395lm87900tcssza9gh06xfpw0wcntvrawn3arnqv3je026d2ktj64mlezehwx3zljjvqq2gzrfpfn45z2lc8y3j4cpnw44q4",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542221469609,
+          "updated" : 1542221469609
+        }, {
+          "id" : "ch_GbN7bUx4ZyP7f6Hp4Y4Him79iY9bF",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "a3e1a091c10341390c6e124be6e8996f3f70e9020275a9734545a515f41c3c9b",
+          "payment_request" : "lntb420u1pd7hg85pp550s6pywpqdqnjrrwzf97d6yedulhp6gzqf66ju69gkj3taqu8jdsdr0235x2gz5d9kk2ueqxqej7jnpdchnyvps8ysyx6rpde3k2mrvdaezqmmwyp38y6twdvsx7e3qwdjkxmmwvssxyctfd3hh2apqvehhygrzv9hxkuccqp2unxnsk3yckt9n5p7uns2lqypwh2zypplvjzfwhes7z6hw0z460jnynvlt3jg84w9ky8zzydv4g77nk35y9r8w2czwve7j9ryuc7f0cspm9jv89",
+          "description" : "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks",
+          "customer_id" : "option text for identifying user",
+          "paid" : false,
+          "created" : 1542168820820,
+          "updated" : 1542168820820
+        }, {
+          "id" : "ch_3vymhqec4RZQVfKQtCKH5j3R6yv7u",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "facf7152a70cf8b03c4f160c98495229385b4eb818993bba541d54a3aefc1399",
+          "payment_request" : "lntb420u1pd7hgr4pp5lt8hz548pnutq0z0zcxfsj2j9yu9kn4crzvnhwj5r4228thuzwvsdr0235x2gz5d9kk2ueqxqej7jnpdchnyvps8ysyx6rpde3k2mrvdaezqmmwyp38y6twdvsx7e3qwdjkxmmwvssxyctfd3hh2apqvehhygrzv9hxkuccqp2ev87r57en5smqqjaztv6x6hyddmg8q6e7j4at9prz4w0uz9auymy9ry3jjf7k75h40njgzd7gj5z3rspr9qaq3jhgtyzjfqfep5fracq43wt30",
+          "description" : "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks",
+          "customer_id" : "option text for identifying user",
+          "paid" : false,
+          "created" : 1542168693183,
+          "updated" : 1542168693183
+        }, {
           "id" : "ch_P25H4AwF5MxW122KtnQtSwWKM58dp",
           "object" : "charge",
           "amount" : 42000,
@@ -363,7 +467,33 @@ http_interactions:
           "paid" : false,
           "created" : 1542092140170,
           "updated" : 1542092140170
+        }, {
+          "id" : "ch_CtTrDMytr6HNJRZudeGuP1zA3Qeoa",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "63af6f2a34d46fbc14edd6f098bdbbbef783cd4a025f5f82245f94306ac68c08",
+          "payment_request" : "lntb420u1pd75atfpp5vwhk723563hmc98d6mcf30dmhmmc8n22qf04lq3yt72rq6kx3syqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2hwjx8znp4f5vy5meem2c9g6szq2ae4gygwed03smp4kmcm0udgtq7f6fzz5g4jvl9hc0pf7humfktuxmh5npt0y7d6tze0cs7a4l7asq3aly8d",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542092137784,
+          "updated" : 1542092137784
+        }, {
+          "id" : "ch_DRPDrPEb8AzkFpPSqjMY4YFB1XYD7",
+          "object" : "charge",
+          "amount" : 42000,
+          "currency" : "btc",
+          "amount_satoshi" : 42000,
+          "payment_hash" : "7268ae59de12c20c6a69ca45b04403a31c724b1e140a22f27087146e2112a2ff",
+          "payment_request" : "lntb420u1pd75atqpp5wf52ukw7ztpqc6nfefzmq3qr5vw8yjc7zs9z9unssu2xuggj5tlsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2fgpq5vnfaw84tma6mdu6z32762xu6x279wrcg9pvzvs2kyr296mxt06v2v4xjvzpgtdkdwl6wma8rdtjdxpt698f4k2xmxma7yh84wgp3sz0xk",
+          "description" : "1%20Blockaccino",
+          "customer_id" : "This is a random test field",
+          "paid" : false,
+          "created" : 1542092128500,
+          "updated" : 1542092128500
         } ]
     http_version: 
-  recorded_at: Wed, 14 Nov 2018 03:42:44 GMT
+  recorded_at: Wed, 14 Nov 2018 18:56:42 GMT
 recorded_with: VCR 3.0.3

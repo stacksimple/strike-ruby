@@ -35,7 +35,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 14 Nov 2018 03:42:37 GMT
+      - Wed, 14 Nov 2018 18:56:43 GMT
       Server:
       - nginx/1.12.1
       Content-Length:
@@ -46,19 +46,19 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "id" : "ch_MBds3gUEkmNj6drfKEZBZiNH6GmHw",
+          "id" : "ch_LzQ9ASJS9KABeqdWhCjCGuK2uiee4",
           "object" : "charge",
           "amount" : 42000,
           "currency" : "btc",
           "amount_satoshi" : 42000,
-          "payment_hash" : "c5fb6e76ecedf64b339c08262ad5a61b40805128f7a1e636159b2eaa01dd735c",
-          "payment_request" : "lntb420u1pd7hxddpp5chakuahvahmykvuupqnz44dxrdqgq5fg77s7vds4nvh25qwawdwqdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2vt78d5zd4dvlhg8fhjk6cr8s0q3fx7de2nquyt2p0elfcyj4d2hpqs0pdkwan6kz3rlfc6uazt00yn2y203fdfhwkcr9g0pfxd30ylspuctywq",
+          "payment_hash" : "45650759390b8b65d5a0f062cea3d773bcf443f91cc39ab2b6acc92aca65849d",
+          "payment_request" : "lntb420u1pd7cmltpp5g4jswkfepw9kt4dq7p3vag7hww70gslernpe4v4k4nyj4jn9sjwsdqcxyjnyvzzd3hkx6mpvd3kjmn0cqp2qy5vla4tjrm4l9u9wf9sycxlsqyxepelsjezlx302p58992re83yx73mjnpz7arfnzyxqm8cnuratqlzvgxus26w4rl27zq2g0prjmqqyt3vup",
           "description" : "1%20Blockaccino",
           "customer_id" : "This is a random test field",
           "paid" : false,
-          "created" : 1542166957572,
-          "updated" : 1542166957572
+          "created" : 1542221803505,
+          "updated" : 1542221803505
         }
     http_version: 
-  recorded_at: Wed, 14 Nov 2018 03:42:37 GMT
+  recorded_at: Wed, 14 Nov 2018 18:56:43 GMT
 recorded_with: VCR 3.0.3

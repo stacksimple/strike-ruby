@@ -36,12 +36,6 @@ class Strike::ChargeTest < Minitest::Test
     end
   end
 
-  def test_find_fail
-    VCR.use_cassette('charge/find_fail') do
-      assert_nil Strike::Charge.find(-1).id
-    end
-  end
-
   def test_create
     VCR.use_cassette('charge/create') do
       charge = Strike::Charge.create(options)
@@ -55,11 +49,9 @@ class Strike::ChargeTest < Minitest::Test
 
   def test_error_bad_parameters
     VCR.use_cassette('charge/error_bad_parameters') do
-      charge = Strike::Charge.create(
-        options.merge(amount: "blah", currency: 123.45)
-      )
-      assert charge.fail?
-      assert_equal 400, charge.code
+      assert_raises Strike::Errors::BadRequestError do
+        Strike::Charge.create(options.merge(amount: "blah", currency: 123.45))
+      end
     end
   end
 
@@ -69,18 +61,19 @@ class Strike::ChargeTest < Minitest::Test
       Strike::Client.instance_variable_set :@api_url, nil
       key = Strike::Client.strike_api_key
       Strike::Client.strike_api_key = "foo"
-      charge = Strike::Charge.create(options)
-      assert charge.fail?
-      assert_equal 401, charge.code
+
+      assert_raises Strike::Errors::UnauthorizedError do
+        Strike::Charge.create(options)
+      end
       Strike::Client.strike_api_key = key
     end
   end
 
   def test_error_resource_does_not_exist
     VCR.use_cassette('charge/error_resource_does_not_exist') do
-      charge = Strike::Charge.find(-1)
-      assert charge.fail?
-      assert_equal 404, charge.code
+      assert_raises Strike::Errors::NotFoundError do
+        Strike::Charge.find(-1)
+      end
     end
   end
 end

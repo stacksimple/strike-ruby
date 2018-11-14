@@ -64,6 +64,8 @@ module Strike
           req.params['page'] = (page - 1).to_i
           req.params['size'] = per_page.to_i
         end
+      handle_errors(response)
+
       JSON.parse(response.body).map { |attributes| new(attributes) }
     end
 
@@ -74,6 +76,8 @@ module Strike
     # returns [Strike::Charge]
     def self.find(id)
       response = conn.get("#{api_url}/#{id}")
+      handle_errors(response)
+
       new(JSON.parse(response.body))
     end
 
@@ -99,7 +103,15 @@ module Strike
           req.headers['Content-Type'] = 'application/json'
           req.body = body.to_json
         end
+
+      handle_errors(response)
+
       new(JSON.parse(response.body))
+    end
+
+    def self.handle_errors(response)
+      error = Strike::Errors::ERROR_MAP[response.status]
+      raise error.new if error
     end
   end
 end
